@@ -1,0 +1,40 @@
+.get-started{
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: var(--blue-second);
+    border: none;
+    color: var(--white-color);
+    font-size:1.8rem;
+}
+
+.login-btn{
+   border:2px solid var(--soft-red);
+   padding:10px 20px;
+   border-radius: 5px;
+   color: var(--gray-blue);
+   &:hover{
+      background-color: var(--soft-red);
+      color: var(--white-color);
+      cursor: pointer;
+
+   }
+}
+
+.title-section{
+   text-align:center;
+}
+
+.active-slide{
+   border-bottom:4px solid var(--soft-red);
+}
+
+.more-info{
+   padding:10px 20px;
+   background-color: var(--soft-blue);
+   border:none;
+   color: var(--white-color);
+   border-radius:5px;
+   margin-top:20px;
+
+
+}

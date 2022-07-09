@@ -1,0 +1,237 @@
+@import '../helpers/root';
+@import '../helpers/reset';
+@import '../helpers/classes';
+@import '../helpers/mixins';
+
+//start header
+header{
+   width: 100%;
+   height: 73px;
+   position: relative;
+   position: fixed;
+
+
+
+
+
+      .container{
+         @include between;
+         .logo{
+            z-index: 100;
+         }
+         i{
+            display: none;
+            @media(max-width:576px){
+               display: block;
+               z-index: 100;
+            }
+
+         }
+
+      }
+
+      nav{
+          width: 500px;
+          height: 100%;
+          @media(max-width:576px){
+             width: 100%;
+             height: 100vh;
+             background-color: var(--dark-blue);
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+             position: absolute;
+             left: 0;
+             top: 0;
+             display: none;
+
+        }
+
+             ul{
+                width: 100%;
+                @include between;
+
+                @media(max-width:576px){
+                   display: block;
+
+                   background-color: red;
+                }
+
+                  li{
+                     height: 100%;
+                     padding:0 20px;
+                     @include center-f;
+                     cursor: pointer;
+
+                       a{
+                          color: var(--gray-blue);
+                          cursor: pointer;
+
+                          &:hover{
+                             color: var(--soft-red);
+                          }
+                       }
+                  }
+             }
+      }
+
+}
+//end header
+
+// start home PAGE
+.home{
+   width: 100%;
+   min-height: 100vh;
+   background-color: var(--white-color);
+
+   .container{
+
+      min-height: 100vh;
+      @include between;
+
+      @media(max-width:576px){
+         padding-top:90px;
+         flex-direction: column-reverse;
+         justify-content: center;
+         align-items: center;
+      }
+
+        .home-content{
+          width: 45%;
+           @media(max-width:576px){
+               margin-top:20px;
+               width: 100%;
+               text-align: center;
+           }
+           h1{
+               font-weight: bold;
+               font-size:3rem;
+
+               @media(max-width:576px){
+                  font-size:2rem;
+               }
+
+           }
+
+           p{
+               color: var(--gray-blue);
+           }
+
+           .browsers-btns{
+              margin-top: 20px;
+              width: 380px;
+              @include between;
+
+              @media(max-width:576px){
+                 width:300px;
+              }
+
+                @media(max-width:576px){
+                   flex-direction: column;
+
+                }
+
+              button{
+                padding:10px 20px;
+                border:2px solid var(--gray-blue);
+                color: var(--gray-blue);
+                font-size: bold;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 20px;
+                transition: 500ms;
+                &:hover{
+                  background-color: var(--soft-blue);
+                  color: var(--white-color);
+                  transform: scale(1.1);
+                }
+              }
+           }
+
+        }
+
+        img{
+           width: 45%;
+
+           @media(max-width:576px){
+              width: 100%;
+           }
+        }
+   }
+}
+//end home PAGE
+
+
+
+//start Features
+.features{
+    width: 100%;
+    min-height: 100vh;
+   .container{
+     padding:30px 0;
+        & > p:first-of-type{
+           width:500px;
+           text-align: center;
+           margin:20px auto;
+           color: var(--gray-blue);
+
+           @media(max-width:576px){
+              width:300px;
+           }
+        }
+
+        ul{
+           margin: 40px auto;
+           width:70%;
+           @include between;
+           border-bottom: 1px solid #f0f0f0;
+           @media(max-width:576px){
+              display: block;
+           }
+
+             li{
+                padding:10px 20px;
+                text-align: center;
+                &:hover{
+                   color: var(--soft-red);
+                   cursor: pointer;
+                }
+             }
+        }
+
+        .slider-content{
+            @include between;
+
+            @media(max-width:576px){
+                flex-direction: column;
+            }
+           img{
+              width:50%;
+              @media(max-width:576px){
+                 width:100%;
+              }
+
+           }
+
+           .content{
+
+              text-align: center;
+              width:40%;
+
+              p{
+                 color: var(--gray-blue);
+                  }
+              @media(max-width:576px){
+                 width:100%;
+                 margin-top:30px;
+              }
+           }
+
+
+        }
+
+
+   }
+}
+//end Features
