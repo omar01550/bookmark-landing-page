@@ -24,15 +24,15 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#" class="features-link">Features</a>
+                        <a href="#features" class="features-link">Features</a>
                     </li>
 
                     <li>
-                        <a href="#" class="pricing-link">Pricing</a>
+                        <a href="#pricing" class="pricing-link">Pricing</a>
                     </li>
 
                     <li>
-                        <a href="#" class="contact-link">Contact</a>
+                        <a href="#contact" class="contact-link">Contact</a>
                     </li>
 
                     <li>
@@ -50,7 +50,7 @@
 
    <!--end header-->
 
-    <section class="home">
+    <section class="home" id="home">
          <div class="container">
            <div class="home-content">
                <h1>A Simple Bookmark Manager</h1>
@@ -69,7 +69,7 @@
 
 
     <!--start feature-->
-    <section class="features">
+    <section class="features" id="features">
         <div class="container">
               <h2 class="title-section">Features</h2>
               <p>Our aim is to make it quick and easy for you to access your favourite websites.
@@ -77,28 +77,178 @@
 
               <div class="silder-features">
                   <ul>
-                      <li class="active-slide">Simple Bookmarking</li>
-                      <li>Speedy Searching</li>
-                      <li>Easy Sharing</li>
+                      <li class="active-link tab-link" data-target=".tab-1">Simple Bookmarking</li>
+                      <li class="tab-link" data-target=".tab-2">Speedy Searching</li>
+                      <li class="tab-link" data-target=".tab-3">Easy Sharing</li>
                   </ul>
+                  <div class="slider">
+                       <div class="tab tab-1 active-tab">
+                            <img src="images\illustration-features-tab-1.svg" alt="not found">
 
-                  <div class="slider-content">
-                      <img src="images\illustration-features-tab-1.svg" alt="not found">
-                      <div class="content">
-                            <h2>Bookmark in one click</h2>
-                            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
-                            gives you complete control over how you manage your favourite sites.</p>
-                            <button type="button" name="button" class="more-info">More Info</button>
-                      </div>
+                            <div class="tab-content">
+                                   <h3>Bookmark in one click</h3>
+                                   <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+                                   gives you complete control over how you manage your favourite sites.
+                                   </p>
+                                   <button type="button" name="button" class="more-info">more info</button>
+                            </div>
+                       </div>
+
+
+                       <div class="tab tab-2">
+                            <img src="images\illustration-features-tab-2.svg" alt="not found">
+
+                            <div class="tab-content">
+                                   <h3>Bookmark in one click</h3>
+                                   <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+                                   gives you complete control over how you manage your favourite sites.
+                                   </p>
+                                   <button type="button" name="button" class="more-info">more info</button>
+                            </div>
+                       </div>
+
+
+                       <div class="tab tab-3">
+                            <img src="images\illustration-features-tab-3.svg" alt="not found">
+
+                            <div class="tab-content">
+                                   <h3>Bookmark in one click</h3>
+                                   <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+                                   gives you complete control over how you manage your favourite sites.
+                                   </p>
+                                   <button type="button" name="button" class="more-info">more info</button>
+                            </div>
+                       </div>
                   </div>
               </div>
         </div>
     </section>
     <!--end feature-->
 
+    <!--start pricing-->
+     <section class="pricing" id=pricing>
+         <div class="container">
+              <h2 class="title-section">Download the extension</h2>
+              <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve
+              got a favourite you’d like us to prioritize.</p>
+
+              <div class="cards">
+                  <div class="card chrome">
+                      <img src="images\logo-chrome.svg" alt="">
+                      <h3>Minimum version 62</h3>
+                      <p>Add & Install Extension</p>
+                      <a href="#"><button type="button" name="button">Add & Install Extension</button></a>
+                  </div>
+
+                  <div class="card firefox">
+                      <img src="images\logo-firefox.svg" alt="">
+                      <h3>Add to Firefox</h3>
+                      <p>Minimum version 55</p>
+                      <a href="#"><button type="button" name="button">Add & Install Extension</button></a>
+                  </div>
+
+
+                  <div class="card opera">
+                      <img src="images\logo-opera.svg" alt="">
+                      <h3>Add to Opera</h3>
+                      <p>Minimum version 46</p>
+                      <a href="#"><button type="button" name="button">Add & Install Extension</button></a>
+                  </div>
+              </div>
+              <h3 class="title-section">Frequently Asked Questions</h3>
+              <p class="p">Here are some of our FAQs. If you have any other questions you’d like
+              answered please feel free to email us.</p>
+
+              <div class="faq">
+                   <div class="question" id="q-1">
+                        <div class="q q-1">
+                            <p>what,s your name</p>
+                            <button type="button" name="button" class="show-answer">^</button>
+                        </div>
+
+                        <div class="answer-1 hidden answer">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                   </div>
+
+
+                   <div class="question" id="q-2">
+                        <div class="q q-2">
+                            <p>what,s your name</p>
+                            <button type="button" name="button" class="show-answer">^</button>
+                        </div>
+
+                        <div class="answer-1 hidden answer">
+                          o
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                   </div>
+
+
+                   <div class="question" id="q-3">
+                        <div class="q q-3">
+                            <p>what,s your name</p>
+                            <button type="button" name="button" class="show-answer">^</button>
+                        </div>
+
+                        <div class="answer-1 hidden answer">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                   </div>
+         </div>
+
+         <button type="button" name="button" class="more-info">More Info</button>
+       </div>
+     </section>
+    <!--end pricing-->
+
+    <!--start contact-->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h4>35,000+ already joined</h4>
+            <h5>Stay up-to-date with what we’re doing</h5>
+            <form class="" action="index.html" method="post">
+                <input type="email" required>
+                <input type="submit" value="Contact Us">
+            </form>
+
+        </div>
+    </section>
+    <!--end contact-->
+
+    <footer>
+         <div class="container">
+             <img src="images\logo-bookmark.svg" alt="not found image" class="logo">
+
+             <ul class="footer-links">
+                 <li>
+                     <a href="#features">Features</a>
+                 </li>
+
+                 <li>
+                     <a href="#pricing">Pricing</a>
+                 </li>
+
+                 <li>
+                     <a href="#contact">Contact</a>
+                 </li>
+
+
+             </ul>
+
+              <div class="social-links">
+                   <i class="fa fa-facebook"></i>
+                   <i class="fa fa-instagram"></i>
+              </div>
+
+             </div>
+
+         </div>
+    </footer>
 
 
 
+<script src="main.js" charset="utf-8"></script>
 
 </body>
 </html>

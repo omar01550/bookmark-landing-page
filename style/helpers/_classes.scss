@@ -22,9 +22,12 @@
 
 .title-section{
    text-align:center;
+   font-size:2.5rem;
+   font-weight: bold;
+
 }
 
-.active-slide{
+.active-link{
    border-bottom:4px solid var(--soft-red);
 }
 
@@ -35,6 +38,29 @@
    color: var(--white-color);
    border-radius:5px;
    margin-top:20px;
+   cursor: pointer;
 
 
+
+}
+
+
+.show{
+    display: block;
+}
+
+.show-f{
+   display: flex;
+}
+.show-g{
+   display: grid;
+
+}
+
+.hidden{
+   display: none;
+}
+
+.round{
+   color: var(--soft-red);
 }
